@@ -1,6 +1,6 @@
 {
   "name": "node-static-example",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "node-static-example",
   "main": "./lib/index.js",
   "typings": "./.d.ts/node-static-example.d.ts",
