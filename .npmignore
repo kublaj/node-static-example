@@ -1,0 +1,11 @@
+/node_modules/
+/temp/
+/src/
+/typings/
+/lib/*.d.ts
+*.log
+*~
+.*~
+.DS_Store
+/bin/*.d.ts
+/test/

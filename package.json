@@ -1,0 +1,35 @@
+{
+  "name": "node-static-example",
+  "version": "1.0.0",
+  "description": "node-static-example",
+  "main": "./lib/index.js",
+  "typings": "./.d.ts/node-static-example.d.ts",
+  "bin": {
+    "static-server": "./bin/static-server.js"
+  },
+  "scripts": {
+    "clean": "rm -rf ./.d.ts ./lib ./temp ./dist ./bin",
+    "tsc": "rm -rf ./lib ./test ./bin && tsc",
+    "tsc:watch": "npm run tsc -- --watch",
+    "declare": "rm -rf ./.d.ts && mkdir ./.d.ts && typings bundle --out ./.d.ts/node-static-example.d.ts",
+    "build": "npm run tsc && npm run declare",
+    "test": "node test",
+    "prepublish": "npm run build && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acrazing/node-static-example.git"
+  },
+  "keywords": [
+    "static",
+    "server",
+    "node-static-example"
+  ],
+  "author": "acrazing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acrazing/node-static-example/issues"
+  },
+  "homepage": "https://github.com/acrazing/node-static-example#readme",
+  "dependencies": {}
+}
